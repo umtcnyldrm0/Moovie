@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#262626"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/movieImageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/movieTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movieImageView"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        android:text="Movie Title" />
+
+    <TextView
+        android:id="@+id/movieDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movieTitleTextView"
+        android:padding="16dp"
+        android:textColor="#CCCCCC"
+        android:text="Movie description goes here." />
+
+    <TextView
+        android:id="@+id/movieRatingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movieDescriptionTextView"
+        android:padding="16dp"
+        android:textColor="#CCCCCC"
+        android:text="Rating: 7.8/10" />
+
+</RelativeLayout>
